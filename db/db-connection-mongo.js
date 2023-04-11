@@ -9,7 +9,7 @@ const getConnection = async() => {
         console.log('Conexion Exitosa');
 
     }catch (error){
-        console.log('Error');
+        console.log('Error de conexión a la base de datos:', error.message);
     }
 
 }
