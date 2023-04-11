@@ -16,6 +16,9 @@ const validatorInvenotory = (req) => {
     if(!req.body.price){
         validators.push("Es necesario el precio");
     };
+    if(!req.body.colour){ 
+        validators.push("Es necesario el color");
+    };
     if(!req.body.brand){
         validators.push("Es necesario la marca");
     };

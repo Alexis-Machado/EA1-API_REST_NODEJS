@@ -23,6 +23,7 @@ router.post('/', async function (req, res) {
         inventory.description = req.body.description;
         inventory.image = req.body.image;
         inventory.price = req.body.price;
+        inventory.colour= req.body.colour;
         inventory.user = req.body.user;
         inventory.brand = req.body.brand;
         inventory.equipmentStatus = req.body.equipmentStatus;
@@ -90,6 +91,7 @@ router.put('/:inventoryId', async function (req, res) {
         inventory.description = req.body.description;
         inventory.image = req.body.image;
         inventory.price = req.body.price;
+        inventory.colour= req.body.colour;
         inventory.user = req.body.user;
         inventory.brand = req.body.brand;
         inventory.equipmentStatus = req.body.equipmentStatus;
